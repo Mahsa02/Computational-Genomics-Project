@@ -1,0 +1,9 @@
+# Something
+this is for computational genomics blah blah blah. mesmer blah blah blah. go ahead and read reqs and preliminary steps to use this repo. you can donwload the data by emailing this perosn. change local variables as you run the model. beware of addresses. blah blah blhah.
+
+### this project requires python <3.10 as deepcell is not updated for more up to date python versions. 
+...
+# install all requirements by running:
+...
+# Acknowledgements:
+this project is ... 

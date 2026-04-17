@@ -1,0 +1,13 @@
+# ignore venv
+venv/
+# ignore data files
+data/
+# ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+# ignore Python cache files
+__pycache__/
+*.pyc
+# ignore IDE/editor config files
+.vscode/
+.idea/
+# ignore generated prototypes
