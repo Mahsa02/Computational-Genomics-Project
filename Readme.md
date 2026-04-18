@@ -39,7 +39,7 @@ Loads multiplexed tissue images and runs Mesmer to produce a cell segmentation m
 **Output:** `cell_expression.npy` (shape: C × G), `segmentation_mask.npy`
 
 ### 3 — Cosine Similarity + Evaluation (`cosine_similarity.ipynb`)
-Loads the prototype matrix (Person 1) and cell expression matrix (Person 2), computes cosine similarity between every cell and every prototype, assigns predicted cell types, and produces evaluation figures. This establishes whether biological signal is detectable in Mesmer's output — a prerequisite for incorporating it as a loss term.
+Loads the prototype matrix (1) and cell expression matrix (2), computes cosine similarity between every cell and every prototype, assigns predicted cell types, and produces evaluation figures. This establishes whether biological signal is detectable in Mesmer's output — a prerequisite for incorporating it as a loss term.
 
 **Output:** similarity scores, figures, interpretation notes
 
