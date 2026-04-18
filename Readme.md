@@ -75,4 +75,4 @@ Before running Part 3, confirm:
 
 ## Acknowledgements
 
-Advised by Prof. Cassandra Burdziak. [Mesmer](https://pubmed.ncbi.nlm.nih.gov/34795433/) was developed by Greenwald et al. (2022) at the Angelo Lab; [the DeepCell framework][-(https://github.com/vanvalenlab/deepcell-tf) is maintained by the Van Valen Lab at Caltech.
+Advised by Prof. Cassandra Burdziak. [Mesmer](https://pubmed.ncbi.nlm.nih.gov/34795433/) was developed by Greenwald et al. (2022) at the Angelo Lab; [the DeepCell framework](https://github.com/vanvalenlab/deepcell-tf) is maintained by the Van Valen Lab at Caltech.
