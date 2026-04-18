@@ -7,14 +7,7 @@ data/
 # ignore Python cache files
 __pycache__/
 *.pyc
-# ignore IDE/editor config files
-.vscode/
-.idea/
-# ignore generated prototypes
-
 # ignore logs
 logs/
-# ignore environment files
-.env
-# ignore anything files starting with .
+# ignore any files/folders starting with .
 .*

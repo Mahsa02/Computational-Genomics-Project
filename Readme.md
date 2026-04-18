@@ -1,7 +1,5 @@
 # Biologically-Informed Cell Segmentation via Mesmer Loss Modification
 
-## Overview
-
 This project explores whether cell segmentation quality can be improved by incorporating biological signal — specifically, single-cell RNA sequencing (scRNA-seq) reference data — into the training objective of [Mesmer](https://www.nature.com/articles/s41587-021-01094-0), a deep learning model for multiplexed tissue image segmentation.
 
 The core idea: standard Mesmer is trained purely on image features (nuclear and membrane markers). We hypothesize that a segmentation is "better" if the gene expression profile reconstructed from each predicted cell closely resembles a known cell type. We operationalize this using **cosine similarity** between per-cell expression vectors and scRNA-seq prototypes, with the long-term goal of incorporating this signal as an auxiliary loss term during fine-tuning.
@@ -57,7 +55,7 @@ where `L_cosine` penalizes segmentations whose reconstructed per-cell expression
 
 ## Data
 
-The datasets used are not included in this repository. To obtain them, see (drive)[https://drive.google.com/drive/folders/1zu7sYOevH4cgKzgydl4YucbjF4j17fMr?usp=share_link]
+The datasets used are not included in this repository. To obtain them, see [drive](https://drive.google.com/drive/folders/1zu7sYOevH4cgKzgydl4YucbjF4j17fMr?usp=share_link).
 
 - **Spatial:** `CytAssist_Fresh_Frozen_Mouse_Brain_filtered_feature_bc_matrix.h5` — 10x Visium mouse brain
 - **scRNA-seq:** `90cdd3f7-e61e-43ed-97e9-ddc0f7e87827.h5ad` — matched single-cell reference
@@ -77,4 +75,4 @@ Before running Part 3, confirm:
 
 ## Acknowledgements
 
-Advised by Prof. Cassandra Burdziak. (Mesmer)[https://pubmed.ncbi.nlm.nih.gov/34795433/] was developed by Greenwald et al. (2022) at the Angelo Lab; (the DeepCell framework)[https://github.com/vanvalenlab/deepcell-tf] is maintained by the Van Valen Lab at Caltech.
+Advised by Prof. Cassandra Burdziak. [Mesmer](https://pubmed.ncbi.nlm.nih.gov/34795433/) was developed by Greenwald et al. (2022) at the Angelo Lab; [the DeepCell framework](https://github.com/vanvalenlab/deepcell-tf) is maintained by the Van Valen Lab at Caltech.
