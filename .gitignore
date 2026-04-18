@@ -11,3 +11,10 @@ __pycache__/
 .vscode/
 .idea/
 # ignore generated prototypes
+
+# ignore logs
+logs/
+# ignore environment files
+.env
+# ignore anything files starting with .
+.*
