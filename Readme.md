@@ -1,7 +1,5 @@
 # Biologically-Informed Cell Segmentation via Mesmer Loss Modification
 
-## Overview
-
 This project explores whether cell segmentation quality can be improved by incorporating biological signal — specifically, single-cell RNA sequencing (scRNA-seq) reference data — into the training objective of [Mesmer](https://www.nature.com/articles/s41587-021-01094-0), a deep learning model for multiplexed tissue image segmentation.
 
 The core idea: standard Mesmer is trained purely on image features (nuclear and membrane markers). We hypothesize that a segmentation is "better" if the gene expression profile reconstructed from each predicted cell closely resembles a known cell type. We operationalize this using **cosine similarity** between per-cell expression vectors and scRNA-seq prototypes, with the long-term goal of incorporating this signal as an auxiliary loss term during fine-tuning.
