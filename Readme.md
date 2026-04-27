@@ -1,4 +1,4 @@
-# Spatial Transcriptomics — Cellpose + Cosine Prototype Pipeline
+# Spatial Transcriptomics: Cellpose + Cosine Prototype Pipeline
 
 Segments cells in Xenium spatial transcriptomics data using Cellpose, then assigns
 each cell a biological identity by comparing its gene expression profile against
@@ -30,21 +30,15 @@ spatial-transcriptomics/
 
 ## Data files required
 
-Place the following in `data/` before running:
+Data files are located (here)[see link].
 
-| File | Description |
-|---|---|
-| `morphology_focus_0000.ome.tif` | Full-resolution Xenium morphology image |
-| `transcripts.parquet` | Xenium transcript table (x/y coordinates + gene names) |
-| `scrna_expression.csv` | scRNA-seq count matrix (cells × genes) |
-| `scrna_metadata.csv` | scRNA-seq cell metadata with a `cell_type` column |
-| `xenium_gene_panel.txt` | List of genes in the Xenium panel (one per line) |
+They are the following:
+- blah blah
+- blah blah x2
 
 Data files are not tracked by git. See `.gitignore`.
 
-## Running the pipeline
-
-Run the notebooks **in order**:
+## The pipeline
 
 1. `01_build_prototypes.ipynb` — produces `prototypes_normalized.csv` and `shared_genes.txt`
 2. `02_assign_transcripts.ipynb` — produces `masks_center.npy` and `cell_expression_aligned.csv`
@@ -62,24 +56,7 @@ Each notebook has a **Config** cell at the top where you can adjust paths and pa
 | 03 | `HEATMAP_N_CELLS` | `50` | Cells shown in similarity heatmap |
 
 ## Dependencies
-
-```
-cellpose
-tifffile
-pyarrow
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-```
-
-Install with:
-```bash
-pip install cellpose tifffile pyarrow pandas numpy scikit-learn matplotlib seaborn
-```
-
-Cellpose GPU support requires a CUDA-compatible environment (e.g. Google Colab with GPU runtime).
+see requirements.txt and use python 3.13!
 
 ## Background
 
@@ -94,3 +71,4 @@ direction as a prototype — i.e. it strongly resembles that cell type.
 The key design decision is that `shared_genes.txt` acts as the single source of truth
 for gene ordering across all three notebooks, preventing silent misalignment between
 the prototype matrix and the cell expression matrix.
+p
