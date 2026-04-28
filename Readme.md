@@ -70,8 +70,6 @@ Requires **Python 3.13**. Cellpose GPU support requires a CUDA environment
 
 ## Running the pipeline
 
-Run notebooks **in order**:
-
 Each notebook has a **Config** cell near the top — all paths and tunable parameters
 are defined there. Do not hardcode paths elsewhere.
 
