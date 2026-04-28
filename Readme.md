@@ -47,7 +47,7 @@ Computational-Genomics-Project/
 ## Data files required
 
 Place the following in `data/` before running. Data files are not tracked by git.
-
+[data](https://drive.google.com/drive/folders/1DmWBdVZ4qCvsNMzOkfVIYBcIH_K_FZ7e?usp=sharing)
 | File | Description | Used by |
 |---|---|---|
 | `pancreas.h5ad` | scRNA-seq reference (AnnData format, human pancreas) | 01 |
