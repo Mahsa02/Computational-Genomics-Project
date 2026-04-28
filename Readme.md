@@ -70,8 +70,7 @@ Requires **Python 3.13**. Cellpose GPU support requires a CUDA environment
 
 ## Running the pipeline
 
-Each notebook has a **Config** cell near the top — all paths and tunable parameters
-are defined there. Do not hardcode paths elsewhere.
+Each notebook has a **Config** cell near the top. Beware!
 
 ## Key parameters and design decisions
 
@@ -90,12 +89,10 @@ are defined there. Do not hardcode paths elsewhere.
 
 ## A note on cosine similarity scores
 
-Absolute cosine similarity scores in this pipeline are low (typically 0.2–0.5).
-This is expected: the Xenium panel covers only 126 genes out of tens of thousands
-in the scRNA-seq reference. With most of the signal missing, even a perfect
-cell-type match will score low in absolute terms.
+Absolute cosine similarity scores in this pipeline are low (typically 0.2–0.5). The Xenium panel covers only 126 genes out of tens of thousands
+in the scRNA-seq reference. With most of the signal missing, even a perfect cell-type match will score low in absolute terms.
 
-## Evaluation approach (notebook 04)
+## Evaluation approach
 
 Because the Xenium panel does not include canonical islet markers (INS, GCG, SST),
 alpha, beta, and delta cell assignments cannot be validated by marker expression.
@@ -107,8 +104,8 @@ Validation is meaningful for:
 - **Immune** — PTPRC, CD3E, CD68, GNLY, GZMB, CD8A, CD4
 - **Mast** — MS4A2, FCER1A
 
-The marker gene heatmap (section 2 of notebook 04) should show highest expression
-of each marker group in its corresponding predicted cell type (diagonal pattern).
+The marker gene heatmap should show highest expression
+of each marker group in its corresponding predicted cell type (diagonal pattern). It ... doesn't?
 
 ## Background
 
