@@ -3,9 +3,9 @@ venv/
 # ignore data files
 data/
 #ignore output files
-output/
+outputs/
 # ignore Jupyter notebook checkpoints
-.ipynb_checkpoints/
+.ipynb_checkpoints
 # ignore Python cache files
 __pycache__/
 *.pyc

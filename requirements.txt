@@ -1,24 +1,20 @@
-# Core scientific stack
 numpy
 pandas
 scipy
 scikit-learn
+matplotlib
+seaborn
+jupyterlab
+ipykernel
 
-# Single-cell data
 anndata
-
-# Spatial / image
-tifffile
-cellpose
-
-# Parquet
+scanpy
+zarr
+dask
+h5py
 pyarrow
 fastparquet
 
-# Visualisation
-matplotlib
-seaborn
-
-# Notebook
-jupyter
-ipykernel
+tifffile
+imagecodecs
+ome-types
