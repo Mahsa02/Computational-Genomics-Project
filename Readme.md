@@ -1,4 +1,4 @@
-# Spatial Transcriptomics — Cellpose + Cosine Prototype Pipeline
+# Spatial Transcriptomics: Cellpose + Cosine Prototype Pipeline
 
 Segments cells in Xenium spatial transcriptomics data (human breast) using Cellpose,
 then assigns each cell a biological identity by comparing its gene expression profile
