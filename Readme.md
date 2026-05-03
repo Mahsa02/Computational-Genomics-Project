@@ -56,7 +56,7 @@ Computational-Genomics-Project/
 
 ## Data files required
 
-Place the following in [`data/`](https://datasets.cellxgene.cziscience.com/fe09a67a-b4da-4b8b-8210-00cb0b90eb61.h5ad) before running. Data files are not tracked by git.
+Place the [following](https://drive.google.com/file/d/1Vd8j8MCcDgtq9qwLY5X2Z0bO2-A8-r1F/view?usp=sharing) in `data/` before running. Data files are not tracked by git.
 
 | File | Description | Used by |
 |---|---|---|
