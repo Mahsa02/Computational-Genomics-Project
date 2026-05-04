@@ -10,7 +10,7 @@ In practice this separation breaks down: segmentation errors propagate directly 
 breast_reference.h5ad ──► 01_build_prototypes  ──► prototypes_normalized.csv
                                                             │
 morphology_focus/     ──► 02_assign_transcripts ──► cell_expression_aligned.csv
-transcripts.parquent      ──►  (Cellpose + transcript assignment)
+transcripts.zarr      ──►  (Cellpose + transcript assignment)
                                                             │
                                                             ▼
                           03_cosine_similarity  ──► cell_type_predictions.csv
